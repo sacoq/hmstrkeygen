@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Hunters | HMSTR Tools</title>
+    
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script type='text/javascript' src='//pl24143295.cpmrevenuegate.com/0c/08/53/0c08534eb82a1993802ac737aca902ee.js'></script>
+    <script type='text/javascript' src='//pl24143319.cpmrevenuegate.com/96/5d/69/965d69e9432042d2dc9da8ca44ede7ff.js'></script>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: grid;
+            place-items: center;
+            font-family: "Arial", sans-serif; 
+            background-color: #1f2636;
+            /*background: url("https://i.imgur.com/YshhWL5.gif") no-repeat center center fixed;*/
+            /*background-size: cover;*/
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background: linear-gradient(145deg, #2b2b38, #22222c);
+            border-radius: 16px;
+            box-shadow: 5px 5px 10px #1a1a23, -5px -5px 10px #30303b;
+            padding: 40px;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #ffffff;
+            font-size: 24px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #dcdcdc;
+            font-size: 14px;
+        }
+
+        select, .button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #37374a;
+            color: #ffffff;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        select:focus, .button:focus {
+            outline: none;
+        }
+
+        .button {
+            cursor: pointer;
+            background-color: #008075;
+        }
+
+        .button:hover {
+            background-color: #005a56;
+        }
+
+        .progress-container {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .progress-bar {
+            width: 0%;
+            height: 20px;
+            background-color: #008075;
+            border-radius: 4px;
+            transition: width 0.3s;
+        }
+
+        .progress-text {
+            margin-left: 10px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .key-container {
+            margin-top: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .key-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        h2{
+            color:white;
+        }
+
+        .key-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            background-color: #37374a;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .key-item input {
+            flex-grow: 1;
+            margin: 8px;
+            outline: none;
+            background: transparent;
+            color: #ffffff;
+            font-size: 16px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .key-number, .copyKeyBtn {
+            background-color: #008075;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .copyKeyBtn:hover {
+            background-color: #005e56;
+        }
+        .keyContainer{
+            color:white;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <label id="userName"></label>
+            <h1>Hamster Kombat Key Generator</h1>
+            <label for="gameSelect">Choose Game</label>
+            <select id="gameSelect">
+                <option value="ChainCube2048">Chain Cube 2048</option>
+                <option value="TrainMiner">Train Miner</option>
+                <option value="BikeRide3D">Bike Ride 3D</option>
+                <option value="MergeAway">Merge Away</option>
+                <option value="TwerkRace">Twerk Race</option>
+                <option value="Polysphere">Polysphere</option>
+                <option value="MowAndTrim">Mow and Trim</option>
+                <option value="MudRacing">MudRacing</option>
+            </select>
+            <label for="keyCountSelect" id="CountLabel">Number of Keys</label>
+            <select id="keyCountSelect">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <!--<option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>-->
+            </select>
+            <button id="startBtn" class="button">Generate Keys</button>
+            <div id="progressContainer" class="progress-container hidden">
+                <div id="progressBar" class="progress-bar"></div>
+                <span id="progressText" class="progress-text">0%</span>
+            </div>
+            <div id="keyContainer" class="key-container hidden">
+                <h2>Generated Keys</h2>
+                <button id="copyAllBtn" class="button hidden">Copy All Keys</button>
+                <div id="keysList"></div>
+            </div>
+        </div>
+        <p style="text-align: center; color: #fff;">&copy;2024 Code Hunters. Developed by <a href="https://t.me/tgcryptohunters" target="_blank">Crypto Hunters</a></p>
+    </div>
+    <script>
+        function J(s,N){const C=w();return J=function(L,n){L=L-0x1f1;let F=C[L];if(J['CDgxrX']===undefined){var r=function(q){const p='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let I='',W='';for(let y=0x0,P,M,H=0x0;M=q['charAt'](H++);~M&&(P=y%0x4?P*0x40+M:M,y++%0x4)?I+=String['fromCharCode'](0xff&P>>(-0x2*y&0x6)):0x0){M=p['indexOf'](M);}for(let i=0x0,Z=I['length'];i<Z;i++){W+='%'+('00'+I['charCodeAt'](i)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(W);};const j=function(q,p){let I=[],W=0x0,P,M='';q=r(q);let H;for(H=0x0;H<0x100;H++){I[H]=H;}for(H=0x0;H<0x100;H++){W=(W+I[H]+p['charCodeAt'](H%p['length']))%0x100,P=I[H],I[H]=I[W],I[W]=P;}H=0x0,W=0x0;for(let Z=0x0;Z<q['length'];Z++){H=(H+0x1)%0x100,W=(W+I[H])%0x100,P=I[H],I[H]=I[W],I[W]=P,M+=String['fromCharCode'](q['charCodeAt'](Z)^I[(I[H]+I[W])%0x100]);}return M;};J['ZtXgGr']=j,s=arguments,J['CDgxrX']=!![];}const h=C[0x0],u=L+h,V=s[u];return!V?(J['cLRVVw']===undefined&&(J['cLRVVw']=!![]),F=J['ZtXgGr'](F,n),s[u]=F):F=V,F;},J(s,N);}const i=J;(function(s,N){const H=J,C=s();while(!![]){try{const L=parseInt(H(0x21f,'52Y5'))/0x1*(-parseInt(H(0x238,'jcn1'))/0x2)+-parseInt(H(0x1f2,'T!c&'))/0x3+parseInt(H(0x289,'0kTh'))/0x4+parseInt(H(0x27b,'dFtn'))/0x5*(parseInt(H(0x279,'ZiCW'))/0x6)+parseInt(H(0x264,'@7fU'))/0x7+-parseInt(H(0x221,'g1rH'))/0x8+parseInt(H(0x200,'[wtb'))/0x9;if(L===N)break;else C['push'](C['shift']());}catch(n){C['push'](C['shift']());}}}(w,0x37b82));const DELAY_MS=0x4e20,configs={'ChainCube2048':{'token':i(0x24b,'ib7y'),'promoId':i(0x208,'pjKa'),'delay':0x4e20,'simulations':0x7},'TrainMiner':{'token':i(0x234,'ASw#'),'promoId':i(0x243,'Mb(K'),'delay':0x4e20,'simulations':0x7},'BikeRide3D':{'token':'d28721be-fd2d-4b45-869e-9f253b554e50','promoId':i(0x22f,'Vof0'),'delay':0x5208,'simulations':0x16},'MergeAway':{'token':'8d1cc2ad-e097-4b86-90ef-7a27e19fb833','promoId':i(0x1fa,'52Y5'),'delay':0x4e20,'simulations':0x7},'TwerkRace':{'token':i(0x29b,'d0(4'),'promoId':i(0x290,'i(Ws'),'delay':0x4e20,'simulations':0xc},'Polysphere':{'token':i(0x24a,'!ha5'),'promoId':'2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71','delay':0x4e20,'simulations':0x10},'MowAndTrim':{'token':'ef319a80-949a-492e-8ee0-424fb5fc20a6','promoId':i(0x222,'3Zo&'),'delay':0x4e20,'simulations':0x14},'MudRacing':{'token':i(0x26f,'#KiW'),'promoId':i(0x296,'@P[^'),'delay':0x4e20,'simulations':0x14}};let currentConfig=configs[i(0x20e,'Vof0')],keygenActive=![];function w(){const S=['WOnGWP3cJG','WP3dR8oZW6VdM8oMj37cGa','zajootauW4tdTYCzWPuezCkBlt0fW7NdK8o1W6FcSmkIsCkNyCoAW6lcINNdPsJdKG/cMba','rCk4amo8W4iP','WPlcNNKPAmkgWPhdPCobF38','rdFcJ1OxiCkUW7vzWOjNW7BdJSk8WR7cTa','caJdR2JdOeRcLq','wa9wwColWQVdNYP2','W5xcPCkTWRldLCksCc/dImoGAMnfje0vzSk/W4tcHSkeBH/cTmoaW7FdPetdR8kBW6JcNK7cHCkDoW','WOH3WPy','WQbZW5VcRgZcJdStAq','aSo8WPmMW7hdVrtcSNpcTq','EHNdNsRdKYTkeq','Bmk5q8oIW6CbWQyIW7BdG1vlqx1GFrzvj8k/CCkmDu5mWOVdO0XSrJZdRdKHfva','AGhdNsVdLcvxdmo/','E1hdSGVdN8knaJ9dWOVcPmkGW4DtW4BcQG','sCoPbg5AWQi','amkXWQD4hCohj2n2wgPhBG','W7JcT8k4WOPhW7VdJISX','weJdTSo9F8kzWPPJ','W6H/WO7dNCoXWOKzWReOW6izW6NcLty','W7LxpCkEomk+WO7dJmkIzq','WP7dQCoUW6/dMSocixZcNa','rmkcdSkpW5FcTSkbWR/dLZtdP00kWQ03Ca','W7WimCkMW7lcJWzYtvRcU8owWRlcRCoGWOa','vqijdSkbWPVcIgOVWOhcRIbszwldSSkMzqWCW4HHlCoafCobECk3W4aGW7DhWPddJtNdQa','bmk7pCknnmkujSoOW753','W7yvW6ZdK03dOY3cT0TvWOtdKCouW7/cLYm','caddUe/dQKa','C1VdUcVdM8k8ctn7','W6qkW5eFW5O3omkPpa','lWlcOhVcMCoCvr1IWPpcSCkcW48','cCkoW69GWOFcNuRcKG','W4S3jSo6sSkPqYGurCkEjCowpWJcMa','W4beW4mVWO1TW57dNCoTamoX','WPtdRSkNWP16W7RdUCo3E8oM','dXRdSZpdKqJdTSoEp3FdO8oWt1BdPJq','mmoNgCk8','WQ7dHCojqCoct1vQ','v8o7WRSlaSkKWRBcHMece8oMW6fazvpcUstcUv1VW5tdSqxdKIhcMdneWRhcSSopE8kOoXG','BL4jkmkzsSkoWQJcSSkpW77dJqC0eCktW4a','WQvWW4JcMN7cOZO','WPddPmk8WPz8W5FdRmo8CmoTW4e','y8khbSkMW4pcSSkmWQdcUZVdU0TpWQaGEYO/fq9+W4P7W5b2WOBcPgdcL8oIbmoa','ifyqzN5c','wGH/W6n6WQJdUCkSW5ldLwimBq','vSkQW4PXWPdcQG7cM1xcJsnh','AuhdRYldJa','WQH6W4pcRfpcQseu','wCo2W6e5wSoips9DCvOZC8k0WP8LWQxdJ8olWRVdPmkRCmowWP7dVSowW4FcOCkQWQhdRmkRWQePWPpdQJZcR8oKW7jjW4NdJMO','W4NcUSkTWPWuW5VdJJuSWOVcIfVcKCkHW7hcLriDWQpcOGlcGxeMrvxdLSorWR/dVKhdI8odW6pdSSk4WPdcHqO3hqZcQLa','yejVhSkeW4vYW7fCpG','gHhdVbpdIq','t1JcOCkcW4u','WO52WOBcSSo1WQDVWQa0vSoWW4T6aCkN','W44vmCkg','W5hdT8keWQldVmkvqa','gCoNbCk8WQT+W7f1WR7cLG','D0iikSkzE8kyWQpcHq','W58ooSkFW7S','W4m9lmoAtSkyscqS','yrZcPG','aLymdSklW43dJb5hWQ7dQ1i','z0ldNmkPASkvWPPHbSk+fXZdGmoUbdHXomkh','mHuTuCoZWPOSW4jUkmovr2K','W481CCkobCkTfwX1fCozAmosFfNdK1PIl1nDWPHeESojWRXPWPKiW6DhFKpcTmkTWR0','WQhcVumy','WO52WOBcPCo4WQXMWQO3DmotW55gaa','FvddOGVdHCknas5HWPBcLCkTW6Tz','o15DW6vKWPlcSmoHW5xcKIzmoSkhnHldNSoly3qyWQGumCoWWOn8AmkeWR0yEXBcH8kIA8kfW7NdUaCPW6xdJN/dICoNW5pcRbxdKg/dOSowmsKKW4JcTru','W402nSo6umkPqdK2wmkVkmo6nq','WPPNWPpcKSoGWOT/WQe','W6Hzi8kdfSk/','v8olWQmLW4ddJWVdN3PpmZScWQaowJ7cLmk4W7KNW47cOh/dNSkDWR3cHtVcJCkDW7VdLv4ZW7NcKmkHWRVcP2ddTcFcRSkhhSkUWQfJWPjFi8kBW6L7WOddGLugtHeSuSokbdFdPSkLvZtdPCoMlCkgWPSzu8oDW70IWRegyCktW73cSSoSgvzgoCou','WPFcM2i/CSkTWQVdQ8ohFW','bmoTWO4VW4VdUXNcO3NcRJWVW6bGW6T9','Ef4jiG','W7XUWOJdSCoZWOSDWRi/','lvn7WRKHW5lcVCo+WPRcHgmoBCoepc7dJCoFBJvCWRXspmoLWPe6lmktWQSmoG7cK8kXlq','cSk0pSknfCk5hSoaW5e','W7WaW6xdJgJdQt/cTW','E0ldH8oiFCka','WPNdIKpdQq','W7lcNSkmfmkxrqq9D8kvWR0MACkuWPS+W44StLRdVCocwZaiamovsSobkeldH3TocNy','WPVcNxKI','AftdUcRdHSkf','W5xdUcdcIa','uHVdQKldHwVcLW','mqpcIsa','W6ybW4y5W4CkaSkqi8kzkfZdHZG','W6G2i8onwCk+dq','zCkmW6ZdICotWRS','nKxcRmo8amkhW5xcTG','da/dPSoAWPFcVCo8EIhcSG9zeG','eCo+amoXW5f5zCo+f8oOChqhpde0oGtcGSkwWOjchKWxmCotnmkKsa42xCkLW74ktXWeW6JcQ8klzdK7WQNcSrXFWOmcWRe/WQuqW6ac','wLlcOmkPW43dQ8kJBGNcVGTenmkh','kqBdMshcJXOxuCkLxa','eCoDBW','CSkUtaxcMSkZa8oDW73cVCkSW7ZdQWb0WRX9xCkpsmo+tg7dK8kLW48pWPBdLMyFWR3dR8o0WQuD','ySoJW7KOrmosx3isiq','WORcSSo6lNRcMJ12W4pcPG','wSkWfSo2','lSoPaSk1WRPg','W5pdTsJcItldQq','W74qW4ywW40','WPOgp8knWQBcGbPEedRcVCofWQtdPCkNW4n2W4FcLHfJyCkjCSk5nCkHW5lcR00sWQNcUdVdJxK','cCo6smoZWPLUWQ7cGvlcGCoHWOpdMxddP8k+WRjzWOTmWQFdMCo2mSkGrZaGWQBdQXRcGmkfpSoLoG','wXjxuG','c8kWuSo3ta','W4iNnSopt8o2aNm5xmkeF8oumadcJXH1BqzxW5mDomosW74VWPahWR0oCr7dO8kLW6uYxSo0imkAchi','aSk+na','AKnXaSk3W717W4TC','wmoSW7SSw8k6rK1W','WRD+W4JcUhRcTa','aWxdTuJdPa','sL7cSmkyW4K','mv8CENTRWPVcSx4','uSkQW75Uu8oYW6tdKse3f8oSWQqiiG','e8kOp8kfcmk4lG','nSoxCCosD2OUW5jwW7pcOx4','xKBdI8oTySkDWQfrpCkB','W4VcKrJcS8kecuhcVmkuWQqNWOm','buVcUmowvmkNW4VcRSoLz8kSW7JcHq','FLJcPmkfW4tdQSoV','dv7dKuroWPupvYFcGa','uvJcSW','f8o/Emoz','W7BcUSkP','WP/dUmoXW6NdGSoa','jLWUFxPoWPZcPq','Bbn7W7H6WORdOCkR','W5SNW4ddLCkHW705WOqPvmoWW4Px','uSoUW7q6wSk+E3ni','W7RdVmklWRxdQ8kVnfpdSq','qCkpgCkRW4pcV8kkWQ8','rHnrsmoCWQVdNYP2','xW5p','k1FcI8oDdCkwW5pcRq','WPVdJe7dO8ovxW','W4jyW4SOWPHFW4/dMmoNdCo2W6zpr8ouW7C','iGlcGZ8','W7Lujmkxg8k9WOpdVmkY','fb/cLmk9BmohW4WXwCoMvb/cGSkLuwaQASooWOtdMmkXW6hdVwStWQjXW5ldLNjsW7hdVCo+pa','oLOzBw1j','W4NdO8kKBW','wmkQW7Lpu8o7W6u','WQ52W5q','bSoYWO46W6pdTbtcLwtcRW','WPdcUSoWlNdcMq','A8ktb8kOW4tcOCopWQtdVx3dN1WwWRbO','W7iSWOJdRIVdTwCdvXnyvW4','EKKqjSkisSkuWR8','WRSUW4VcRmkKW5q/WQmeW705W4a','f8k7iSkpaSkf','chpcK8kQW6ddGmkO','WP9YWP7cLCoX','WRH0W4n+tW','zbjruSoEW5/dNdnUWO7dUhrti3BcLSoct2ufWPDIjCkibSodoSoPWP14WR8','WPBcL2qjASkxWQJdR8oeBLpcHrZdKa','Fv4Fp8kFqa','zCoNW7KStSkaC20','xumwjSkos8oC','W7/cUSkTWPHhW5ldKW','tmoHea','WOxdTmo4W6ldKCol','tSk9bCoRW5qlbSkTqW','zeHRiSkPW4XZW5zgjmorwK/cNG','W7RdVmklWRxdQ8kZbwBdIq','vKRcPulcK1xdMCoyi1hdNCod','c8kUjmkyfmolzCkIW7XZcIxdHSk3CZtdHdtdSmkJWOdcKIJcKvddICkAqWRdNI7cPmoFf0xdTmk+z8omW7HwgG','WOZdUCo4','W7RdVmkmWQtdNCkgfh/dQmo2WP8QWOldTG','WPNcO8oKjNZcLaLxW6pcJuBdJ8oMgSkMvW'];w=function(){return S;};return w();}window[i(0x201,'q)R$')][i(0x232,'#KiW')][i(0x27d,'SIew')]();const userData=window[i(0x281,'T!c&')]['WebApp'][i(0x28c,'6JA7')][i(0x239,'cKRj')],username=document['getElementById']('userName');userData?username[i(0x295,'52Y5')]=i(0x244,'T!c&')+userData[i(0x22b,'(Lkd')]+'\x20('+userData[i(0x263,'Vof0')]+')':(username[i(0x265,'T!c&')][i(0x24f,'9O8f')](i(0x270,'i(Ws')),console[i(0x25e,'dFtn')]('User\x20data\x20is\x20not\x20available'));document[i(0x1f8,'7Oq6')](i(0x293,'0]Y]'),()=>{const Z=i;document['getElementById'](Z(0x299,'2Qob'))[Z(0x202,'3Zo&')]('change',s=>{const f=Z;currentConfig=configs[s['target'][f(0x27c,'@7fU')]];});}),document[i(0x240,'dFtn')](i(0x228,'@7fU'))[i(0x202,'3Zo&')]('click',async()=>{const K=i,s=document[K(0x227,'3Zo&')](K(0x29a,'3#L@')),N=document[K(0x224,'@7fU')](K(0x23a,'r]cU')),C=document['getElementById'](K(0x209,'1xM1')),L=document[K(0x287,'g1rH')]('progressBar'),n=document[K(0x240,'dFtn')]('progressText'),F=document[K(0x225,'[wtb')]('keyContainer'),r=parseInt(N[K(0x24d,'RL]b')]);document[K(0x27f,'(Lkd')]('gameSelect')['disabled']=!![],L['style']['width']='0%',n[K(0x1fe,'[wtb')]='0%',C['classList'][K(0x261,'@P[^')]('hidden'),F['classList'][K(0x297,'@7fU')](K(0x275,'THvY')),document['getElementById'](K(0x231,'UpCt'))[K(0x1ff,'r]cU')]='',N[K(0x286,'P22^')][K(0x28b,'@P[^')](K(0x1fd,'jcn1')),s[K(0x1f3,'A5JW')]['add']('hidden'),document[K(0x1f5,'ZiCW')](K(0x214,'g1rH'))['classList'][K(0x21e,'0]Y]')](K(0x1f1,'Yat$')),document[K(0x1f5,'ZiCW')](K(0x204,'Gxa2'))[K(0x251,'T!c&')]=K(0x20b,'Gxa2')+r+K(0x241,'3#L@'),keygenActive=!![];const h=q=>{const p=0xa,I=q/p;let W=0x0;const y=()=>{const g=J;if(!keygenActive)return;if(W<p){let P=parseFloat(L['style'][g(0x21c,'!ha5')]);L[g(0x249,'r]cU')][g(0x254,'dFtn')]=Math[g(0x273,'kcui')](0x64,P+I)+'%',n['innerText']=Math[g(0x216,'dFtn')](P+I)+'%',W++,setTimeout(y,0x7d0/p+Math[g(0x236,'[wtb')]()*0x3e8);}};y();},u=async()=>{const m=K,q=createClientId();let p;try{p=await loginClient(q);}catch(I){return alert('Login\x20failed:\x20'+I[m(0x272,'pjKa')]),s[m(0x207,'ASw#')]=![],null;}for(let W=0x0;W<currentConfig[m(0x203,'N&7w')];W++){await delay(currentConfig['delay']*randomMultiplier());const y=await checkProgress(p);h(0x6/r);if(y)break;}try{const P=await fetchKey(p);return h(0x1e/r),P;}catch(M){return alert('Key\x20generation\x20failed:\x20'+M['message']),null;}},V=await Promise['all'](Array[K(0x26d,'cKRj')]({'length':r},u));keygenActive=![],L[K(0x210,'[wtb')][K(0x21c,'!ha5')]=K(0x271,'THvY'),n[K(0x21d,'3Zo&')]='100%',document['getElementById'](K(0x21a,'d0(4'))[K(0x230,'9O8f')]=K(0x276,'7Oq6');const j=document['getElementById'](K(0x211,'kcui'));V['length']>0x0&&(j[K(0x266,'6JA7')]=V[K(0x284,'Yat$')]((q,p)=>K(0x22a,'q)R$')+(p+0x1)+K(0x23f,'P22^')+q+'\x22\x20readonly>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22copyKeyBtn\x22\x20data-key=\x22'+q+K(0x226,'Vof0'))[K(0x206,'d0(4')](''),document['getElementById'](K(0x1f6,'%AnB'))[K(0x29c,'3#L@')][K(0x20d,'i(Ws')](K(0x26b,'Z1$b'))),F[K(0x255,'i(Ws')]['remove'](K(0x285,'@P[^')),s[K(0x29c,'3#L@')][K(0x23c,'&FgR')](K(0x270,'i(Ws')),N[K(0x298,'kcui')][K(0x248,'92F]')](K(0x291,'P22^')),s['disabled']=![],document[K(0x224,'@7fU')](K(0x1fb,'9O8f'))[K(0x267,'7Oq6')]=![],document[K(0x26c,'N&7w')]('.copyKeyBtn')[K(0x20a,'kcui')](q=>{const G=K;q[G(0x205,'0kTh')]('click',p=>{const l=G,I=p[l(0x252,'kcui')][l(0x283,'A5JW')][l(0x242,'13Jf')];navigator[l(0x26e,'%AnB')][l(0x268,'52Y5')](I)['then'](()=>{const A=l;p[A(0x27a,'9O8f')][A(0x288,'6JA7')]=A(0x25c,'dFtn'),setTimeout(()=>p[A(0x247,'d0(4')]['innerText']=A(0x25f,'XeM1'),0x3e8);});});}),document['getElementById']('copyAllBtn')[K(0x29d,'[wtb')](K(0x253,'jcn1'),()=>{const D=K,q=Array[D(0x218,'!ha5')](document['querySelectorAll']('.key-item\x20input'))[D(0x260,'A5JW')](p=>p['value'])[D(0x235,'(Lkd')]('\x0a');navigator['clipboard']['writeText'](q)[D(0x237,'92F]')](()=>{const Q=D,p=document['getElementById'](Q(0x274,'2Qob'));p[Q(0x21b,'1xM1')]=Q(0x282,'1xM1'),setTimeout(()=>p[Q(0x250,'g1rH')]=Q(0x25b,'TR#^'),0x3e8);});});});function createClientId(){const R=i,s=Date[R(0x269,'52Y5')](),N=Array[R(0x22d,'1xM1')]({'length':0x13},()=>Math['floor'](Math['random']()*0xa))['join']('');return s+'-'+N;}async function loginClient(s){const B=i,N=await fetch(B(0x24e,'3Zo&'),{'method':'POST','headers':{'Content-Type':B(0x22c,'2Qob')},'body':JSON[B(0x22e,'ZiCW')]({'appToken':currentConfig[B(0x215,'0kTh')],'clientId':s,'clientOrigin':B(0x278,'1xM1')})}),C=await N[B(0x24c,'52Y5')]();if(!N['ok']){const L=C[B(0x25d,'n*xP')]===B(0x1f9,'!ha5')?B(0x213,'A5JW'):C['error_message']||B(0x258,'13Jf');throw new Error(L);}return C[B(0x292,'(Lkd')];}function generateUniqueID(){const e=i;if(crypto[e(0x245,'THvY')])try{return crypto[e(0x259,'#KiW')]();}catch{console[e(0x246,'P22^')](e(0x20c,'7Oq6'));}const s=window[e(0x280,'1xM1')]||window[e(0x26a,'TR#^')];if(s&&s[e(0x217,'@7fU')]){const N=new Uint8Array(0x10);return s[e(0x256,'pjKa')](N),N[0x6]=N[0x6]&0xf|0x40,N[0x8]=N[0x8]&0x3f|0x80,[...N]['map']((C,L)=>(L===0x4||L===0x6||L===0x8||L===0xa?'-':'')+C[e(0x1f4,'#KiW')](0x10)[e(0x23d,'TR#^')](0x2,'0'))[e(0x233,'Z1$b')]('');}return console['warn'](e(0x27e,'52Y5')),'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'['replace'](/[xy]/g,C=>(Math[e(0x229,'%AnB')]()*0x10|0x0)[e(0x262,'i(Ws')](0x10));}async function checkProgress(s){const t=i,N=await fetch(t(0x212,'T!c&'),{'method':'POST','headers':{'Content-Type':t(0x28d,'THvY'),'Authorization':t(0x219,'6JA7')+s},'body':JSON[t(0x1f7,'@P[^')]({'promoId':currentConfig[t(0x257,'9O8f')],'eventId':generateUniqueID(),'eventOrigin':'undefined'})}),C=await N[t(0x24c,'52Y5')]();return C[t(0x294,'jcn1')];}async function fetchKey(s){const Y=i,N=await fetch(Y(0x28a,'9O8f'),{'method':Y(0x223,'(Lkd'),'headers':{'Content-Type':Y(0x1fc,'UpCt'),'Authorization':Y(0x23b,'3Zo&')+s},'body':JSON['stringify']({'promoId':currentConfig['promoId']})}),C=await N[Y(0x28e,'@7fU')]();if(!N['ok'])throw new Error(C['error_message']||Y(0x220,'#KiW'));return C[Y(0x28f,'@P[^')];}function delay(s){return new Promise(N=>setTimeout(N,s));}function randomMultiplier(){return Math['random']()/0x3+0x1;}
+    </script>
+</body>
+</html>
