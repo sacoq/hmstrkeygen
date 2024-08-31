@@ -1,1 +1,348 @@
-function _0x456e(_0x5eb797,_0x41357e){const _0x556bd2=_0x556b();return _0x456e=function(_0x456e32,_0x27c9cc){_0x456e32=_0x456e32-0x88;let _0x23eaa1=_0x556bd2[_0x456e32];return _0x23eaa1;},_0x456e(_0x5eb797,_0x41357e);}const _0x44e897=_0x456e;function _0x556b(){const _0x3d7f6a=['Bearer\x20','fe693b26-b342-4159-8808-15e3ff7f8767','promoCode','<div\x20class=\x22key-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20value=\x22','Chain\x20Cube\x202048','Please\x20select\x20a\x20game\x20first.','568GEypIK','position','Number\x20of\x20keys:\x20','Zoopolis','floor','dataset','607005QdFCgS','random','promoId','querySelectorAll','d28721be-fd2d-4b45-869e-9f253b554e50','generatedKeysTitle','\x22>Copy\x20Key</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>','then','.grid-container','21812WFyBQR','clipboard','clientToken','add','Riding\x20Extreme\x203D','from','style','length','Train\x20Miner','b2436c89-e0aa-4aed-8046-9b0515e1c46b','addEventListener','.copyKeyBtn','DOMContentLoaded','center','error','7320030fzTzMB','c7821fa7-6632-482c-9635-2bd5798585f9','timing','keyCountLabel','attempts','hasCode','Emulating\x20progress\x20','keyContainer','100%','getElementById','82647f43-3f87-402d-88dd-09a90025313f','Cafe\x20Dash','writeText','classList','innerText','copyAllBtn','https://api.gamepromo.io/promo/create-code','now','appToken','click','xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx','Failed\x20to\x20login:\x20','https://api.gamepromo.io/promo/login-client','grid','https://api.gamepromo.io/promo/register-event','8814a785-97fb-4177-9193-ca4180ff9da8','b4170868-cef0-424f-8eb9-be0622e8e8e3','undefined','body','progressBar','c4480ac7-e178-4973-8061-9ed5b2e17954','Starting...','join','querySelector','display','left','POST','toString','stringify','keysList','Complete','catch','getAttribute','selected','.game-option','169876URadyb','hidden','74ee0b5b-775e-4bee-974f-63e7f4d5bacb','5zWtgvv','generateMoreBtn','removeChild','43JSgzaH','Fallback:\x20Oops,\x20unable\x20to\x20copy','copyStatus','fixed','progressLog','focus','61308365-9d16-4040-8bb0-2f4a4c69074c','Failed\x20to\x20copy\x20text:\x20','279165fMLRvp','8d1cc2ad-e097-4b86-90ef-7a27e19fb833','1839030gDNrjL','progressContainer','target','filter','Gangs\x20Wars','json','Generating\x20key...','application/json','keyRange','Mud\x20Racing','value','b6de60a0-e030-48bb-a551-548372493523','2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71','map','data-key','33607SUNJyx','keyCountGroup','width','message','replace','...','Twerk\x20Race\x203D','createElement','innerHTML','textarea','deviceid','appendChild','bc0971b8-04df-4e72-8a3e-ec4dc663cd11','smooth','scrollIntoView','Polysphere','remove','disabled','\x22\x20readonly>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22copyKeyBtn\x22\x20data-key=\x22','input','43e35910-c168-4634-ad4f-52fd764a843f','none','ef319a80-949a-492e-8ee0-424fb5fc20a6','Mow\x20and\x20Trim'];_0x556b=function(){return _0x3d7f6a;};return _0x556b();}(function(_0x131356,_0x5594aa){const _0x2cd9bd=_0x456e,_0x7bc85f=_0x131356();while(!![]){try{const _0x1606a9=parseInt(_0x2cd9bd(0x10b))/0x1*(-parseInt(_0x2cd9bd(0xc9))/0x2)+-parseInt(_0x2cd9bd(0x8b))/0x3+parseInt(_0x2cd9bd(0x105))/0x4*(parseInt(_0x2cd9bd(0x108))/0x5)+-parseInt(_0x2cd9bd(0x8d))/0x6+-parseInt(_0x2cd9bd(0x9c))/0x7*(-parseInt(_0x2cd9bd(0xba))/0x8)+parseInt(_0x2cd9bd(0xc0))/0x9+parseInt(_0x2cd9bd(0xd8))/0xa;if(_0x1606a9===_0x5594aa)break;else _0x7bc85f['push'](_0x7bc85f['shift']());}catch(_0x5e5906){_0x7bc85f['push'](_0x7bc85f['shift']());}}}(_0x556b,0x4cb9e),document[_0x44e897(0xd3)](_0x44e897(0xd5),()=>{const _0x33db31=_0x44e897,_0x4ff0af={0x1:{'name':_0x33db31(0xcd),'appToken':_0x33db31(0xc4),'promoId':_0x33db31(0xb0),'timing':0x7530,'attempts':0x19},0x2:{'name':_0x33db31(0xb8),'appToken':'d1690a07-3780-4068-810f-9b5bbf2931b2','promoId':_0x33db31(0xf2),'timing':0x7530,'attempts':0x14},0x3:{'name':'My\x20Clone\x20Army','appToken':_0x33db31(0x107),'promoId':_0x33db31(0xb5),'timing':0x2bf20,'attempts':0x1e},0x4:{'name':_0x33db31(0xd1),'appToken':_0x33db31(0xe2),'promoId':_0x33db31(0xf6),'timing':0x7530,'attempts':0xf},0x5:{'name':'Merge\x20Away','appToken':_0x33db31(0x8c),'promoId':'dc128d28-c45b-411c-98ff-ac7726fbaea4','timing':0x7530,'attempts':0x19},0x6:{'name':_0x33db31(0xa2),'appToken':_0x33db31(0x89),'promoId':_0x33db31(0x89),'timing':0x7530,'attempts':0x14},0x7:{'name':_0x33db31(0xab),'appToken':_0x33db31(0x99),'promoId':_0x33db31(0x99),'timing':0x4e20,'attempts':0x14},0x8:{'name':_0x33db31(0xb3),'appToken':_0x33db31(0xb2),'promoId':_0x33db31(0xb2),'timing':0x4e20,'attempts':0x14},0x9:{'name':_0x33db31(0x96),'appToken':_0x33db31(0xf1),'promoId':_0x33db31(0xf1),'timing':0x4e20,'attempts':0x14},0xa:{'name':_0x33db31(0xe3),'appToken':'bc0971b8-04df-4e72-8a3e-ec4dc663cd11','promoId':_0x33db31(0xa8),'timing':0x4e20,'attempts':0x14},0xb:{'name':_0x33db31(0xbd),'appToken':_0x33db31(0xd2),'promoId':_0x33db31(0xd2),'timing':0x4e20,'attempts':0x14},0xc:{'name':_0x33db31(0x91),'appToken':_0x33db31(0x98),'promoId':_0x33db31(0xd9),'timing':0x9c40,'attempts':0x1e}},_0x3a35a7=document[_0x33db31(0xc3)](_0x33db31(0x104)),_0xd87f2b=document['getElementById'](_0x33db31(0x9d)),_0x4083ce=document[_0x33db31(0xe1)](_0x33db31(0x95)),_0x857fea=document[_0x33db31(0xe1)]('keyValue'),_0x3f0d99=document[_0x33db31(0xe1)]('startBtn'),_0x230d1d=document[_0x33db31(0xe1)](_0x33db31(0xdb)),_0x31fc9f=document['getElementById'](_0x33db31(0x8e)),_0x379a8=document[_0x33db31(0xe1)](_0x33db31(0xf5)),_0x4e8020=document['getElementById']('progressText'),_0x2ee00f=document[_0x33db31(0xe1)](_0x33db31(0x10f)),_0x1af8d6=document['getElementById'](_0x33db31(0xdf)),_0x32ef12=document[_0x33db31(0xe1)](_0x33db31(0xff)),_0x127e01=document[_0x33db31(0xe1)](_0x33db31(0xe7)),_0x27e6c8=document[_0x33db31(0xe1)](_0x33db31(0xc5)),_0x110d6d=document[_0x33db31(0xe1)](_0x33db31(0x10d)),_0x4ce814=document[_0x33db31(0xe1)](_0x33db31(0x109)),_0x340aad=document[_0x33db31(0xe1)]('sourceCode');let _0x57c75a=null;_0x340aad[_0x33db31(0xd3)](_0x33db31(0xeb),()=>{window['open']('https://github.com/ShafiqSadat/HamsterKeyGenWeb','_blank');}),_0x3a35a7['forEach'](_0x27175f=>{const _0x570dc1=_0x33db31;_0x27175f[_0x570dc1(0xd3)]('click',()=>{const _0x23183f=_0x570dc1;_0x3a35a7['forEach'](_0x9e0ffd=>_0x9e0ffd[_0x23183f(0xe5)][_0x23183f(0xac)](_0x23183f(0x103))),_0x27175f[_0x23183f(0xe5)][_0x23183f(0xcc)](_0x23183f(0x103)),_0x57c75a=_0x27175f[_0x23183f(0xbf)]['game'],_0xd87f2b[_0x23183f(0xe5)][_0x23183f(0xac)](_0x23183f(0x106)),_0x3f0d99[_0x23183f(0xe5)][_0x23183f(0xac)]('hidden'),_0xd87f2b[_0x23183f(0xaa)]({'behavior':_0x23183f(0xa9),'block':_0x23183f(0xd6)});});}),_0x4083ce[_0x33db31(0xd3)](_0x33db31(0xaf),()=>{_0x857fea['innerText']=_0x4083ce['value'];}),_0x3f0d99[_0x33db31(0xd3)](_0x33db31(0xeb),async()=>{const _0x4fe04d=_0x33db31,_0x2313bd=parseInt(_0x4083ce[_0x4fe04d(0x97)]);if(!_0x57c75a){alert(_0x4fe04d(0xb9));return;}const _0x522df4=parseInt(_0x57c75a),_0x51e41a=_0x4ff0af[_0x522df4];document[_0x4fe04d(0xf9)](_0x4fe04d(0xc8))[_0x4fe04d(0xcf)][_0x4fe04d(0xfa)]='none',_0xd87f2b[_0x4fe04d(0xcf)][_0x4fe04d(0xfa)]=_0x4fe04d(0xb1),_0x230d1d[_0x4fe04d(0xe6)]=_0x4fe04d(0xbc)+_0x2313bd,_0x379a8[_0x4fe04d(0xcf)][_0x4fe04d(0x9e)]='0%',_0x4e8020[_0x4fe04d(0xe6)]='0%',_0x2ee00f[_0x4fe04d(0xe6)]=_0x4fe04d(0xf7),_0x31fc9f[_0x4fe04d(0xe5)]['remove'](_0x4fe04d(0x106)),_0x1af8d6['classList'][_0x4fe04d(0xcc)](_0x4fe04d(0x106)),_0x27e6c8[_0x4fe04d(0xe5)][_0x4fe04d(0xcc)](_0x4fe04d(0x106)),_0x32ef12[_0x4fe04d(0xa4)]='',_0x127e01[_0x4fe04d(0xe5)][_0x4fe04d(0xcc)]('hidden'),_0x3f0d99[_0x4fe04d(0xe5)]['add']('hidden'),_0x3f0d99['disabled']=!![];let _0x225c9c=0x0;const _0x4d8437=(_0x48eb74,_0x4913f8)=>{const _0x402315=_0x4fe04d;_0x225c9c+=_0x48eb74,_0x379a8['style'][_0x402315(0x9e)]=_0x225c9c+'%',_0x4e8020[_0x402315(0xe6)]=_0x225c9c+'%',_0x2ee00f[_0x402315(0xe6)]=_0x4913f8;},_0x26cae8=async()=>{const _0x3d9aa7=_0x4fe04d,_0x5938ac=_0x29392e();let _0x52e5f3;try{_0x52e5f3=await _0x1d6c79(_0x5938ac,_0x51e41a[_0x3d9aa7(0xea)]);}catch(_0x29ec16){return alert(_0x3d9aa7(0xed)+_0x29ec16[_0x3d9aa7(0x9f)]),_0x3f0d99[_0x3d9aa7(0xad)]=![],null;}for(let _0x2c2b72=0x0;_0x2c2b72<_0x51e41a[_0x3d9aa7(0xdc)];_0x2c2b72++){const _0x5eae6e=await _0x531e41(_0x52e5f3,_0x51e41a['promoId']);_0x4d8437(0x64/_0x51e41a['attempts']/_0x2313bd,_0x3d9aa7(0xde)+(_0x2c2b72+0x1)+'/'+_0x51e41a[_0x3d9aa7(0xdc)]+_0x3d9aa7(0xa1));if(_0x5eae6e)break;await _0x34f660(_0x51e41a[_0x3d9aa7(0xda)]);}try{const _0x20260b=await _0x326949(_0x52e5f3,_0x51e41a[_0x3d9aa7(0xc2)]);return _0x4d8437(0x64/_0x2313bd,_0x3d9aa7(0x93)),_0x20260b;}catch(_0x356821){return alert('Failed\x20to\x20generate\x20key:\x20'+_0x356821['message']),null;}},_0x4c9003=await Promise['all'](Array['from']({'length':_0x2313bd},_0x26cae8));if(_0x4c9003['length']>0x1)_0x32ef12[_0x4fe04d(0xa4)]=_0x4c9003[_0x4fe04d(0x90)](_0x1e4909=>_0x1e4909)[_0x4fe04d(0x9a)](_0x7a15de=>_0x4fe04d(0xb7)+_0x7a15de+_0x4fe04d(0xae)+_0x7a15de+'\x22>Copy\x20Key</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>')[_0x4fe04d(0xf8)](''),_0x127e01[_0x4fe04d(0xe5)][_0x4fe04d(0xac)](_0x4fe04d(0x106));else _0x4c9003[_0x4fe04d(0xd0)]===0x1&&(_0x32ef12[_0x4fe04d(0xa4)]='<div\x20class=\x22key-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20value=\x22'+_0x4c9003[0x0]+'\x22\x20readonly>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22copyKeyBtn\x22\x20data-key=\x22'+_0x4c9003[0x0]+_0x4fe04d(0xc6));_0x1af8d6['classList']['remove']('hidden'),_0x27e6c8[_0x4fe04d(0xe5)][_0x4fe04d(0xac)]('hidden'),document[_0x4fe04d(0xc3)](_0x4fe04d(0xd4))['forEach'](_0x55c21e=>{const _0x3cd75b=_0x4fe04d;_0x55c21e[_0x3cd75b(0xd3)]('click',_0x20f988=>{const _0x530a13=_0x3cd75b,_0x48b24c=_0x20f988[_0x530a13(0x8f)][_0x530a13(0x102)](_0x530a13(0x9b));_0x45fc77(_0x48b24c);});}),_0x127e01[_0x4fe04d(0xd3)](_0x4fe04d(0xeb),()=>{const _0x43bcd5=_0x4fe04d,_0x1492c6=_0x4c9003[_0x43bcd5(0x90)](_0x474239=>_0x474239)[_0x43bcd5(0xf8)]('\x0a');_0x45fc77(_0x1492c6);}),_0x379a8['style']['width']=_0x4fe04d(0xe0),_0x4e8020[_0x4fe04d(0xe6)]=_0x4fe04d(0xe0),_0x2ee00f[_0x4fe04d(0xe6)]=_0x4fe04d(0x100),_0x3f0d99[_0x4fe04d(0xe5)]['remove'](_0x4fe04d(0x106)),_0xd87f2b[_0x4fe04d(0xe5)][_0x4fe04d(0xac)]('hidden'),document[_0x4fe04d(0xf9)]('.grid-container')[_0x4fe04d(0xcf)][_0x4fe04d(0xfa)]=_0x4fe04d(0xef),_0x3f0d99[_0x4fe04d(0xad)]=![];});const _0x29392e=()=>{const _0x157f79=_0x33db31,_0x3b9442=Date[_0x157f79(0xe9)](),_0x3d39e9=Array[_0x157f79(0xce)]({'length':0x13},()=>Math[_0x157f79(0xbe)](Math[_0x157f79(0xc1)]()*0xa))[_0x157f79(0xf8)]('');return _0x3b9442+'-'+_0x3d39e9;},_0x1d6c79=async(_0x55afd2,_0x405875)=>{const _0x106ed3=_0x33db31,_0x5ecfd2=await fetch(_0x106ed3(0xee),{'method':_0x106ed3(0xfc),'headers':{'Content-Type':_0x106ed3(0x94)},'body':JSON[_0x106ed3(0xfe)]({'appToken':_0x405875,'clientId':_0x55afd2,'clientOrigin':_0x106ed3(0xa6)})});if(!_0x5ecfd2['ok'])throw new Error('Failed\x20to\x20login');const _0x3e2298=await _0x5ecfd2['json']();return _0x3e2298[_0x106ed3(0xcb)];},_0x531e41=async(_0x4ffc3c,_0x5b038e)=>{const _0x5daf76=_0x33db31,_0x1abb64=await fetch(_0x5daf76(0xf0),{'method':_0x5daf76(0xfc),'headers':{'Authorization':_0x5daf76(0xb4)+_0x4ffc3c,'Content-Type':'application/json'},'body':JSON[_0x5daf76(0xfe)]({'promoId':_0x5b038e,'eventId':_0x42ea99(),'eventOrigin':_0x5daf76(0xf3)})});if(!_0x1abb64['ok'])return![];const _0x1fee6d=await _0x1abb64[_0x5daf76(0x92)]();return _0x1fee6d[_0x5daf76(0xdd)];},_0x326949=async(_0x1d5996,_0x549713)=>{const _0x20074a=_0x33db31,_0x501015=await fetch(_0x20074a(0xe8),{'method':_0x20074a(0xfc),'headers':{'Authorization':_0x20074a(0xb4)+_0x1d5996,'Content-Type':_0x20074a(0x94)},'body':JSON[_0x20074a(0xfe)]({'promoId':_0x549713})});if(!_0x501015['ok'])throw new Error('Failed\x20to\x20generate\x20key');const _0x542d3d=await _0x501015[_0x20074a(0x92)]();return _0x542d3d[_0x20074a(0xb6)];},_0x42ea99=()=>{const _0x163f7c=_0x33db31;return _0x163f7c(0xec)[_0x163f7c(0xa0)](/[xy]/g,function(_0x10ed3c){const _0x506282=_0x163f7c,_0x4d9a39=Math[_0x506282(0xc1)]()*0x10|0x0,_0x1bb6e3=_0x10ed3c==='x'?_0x4d9a39:_0x4d9a39&0x3|0x8;return _0x1bb6e3[_0x506282(0xfd)](0x10);});},_0x34f660=_0x2320ce=>new Promise(_0x38948a=>setTimeout(_0x38948a,_0x2320ce)),_0x45fc77=_0x305685=>{const _0x419c4b=_0x33db31;if(navigator['clipboard']&&navigator['clipboard'][_0x419c4b(0xe4)])navigator[_0x419c4b(0xca)][_0x419c4b(0xe4)](_0x305685)[_0x419c4b(0xc7)](()=>{const _0x1539cf=_0x419c4b;_0x110d6d['classList'][_0x1539cf(0xac)]('hidden'),setTimeout(()=>_0x110d6d['classList'][_0x1539cf(0xcc)](_0x1539cf(0x106)),0x7d0);})[_0x419c4b(0x101)](_0x140bdb=>{const _0x1bacc7=_0x419c4b;console['error'](_0x1bacc7(0x8a),_0x140bdb);});else{const _0x513e0d=document[_0x419c4b(0xa3)](_0x419c4b(0xa5));_0x513e0d['value']=_0x305685,_0x513e0d[_0x419c4b(0xcf)][_0x419c4b(0xbb)]=_0x419c4b(0x10e),_0x513e0d[_0x419c4b(0xcf)]['top']='0',_0x513e0d[_0x419c4b(0xcf)][_0x419c4b(0xfb)]='0',document[_0x419c4b(0xf4)][_0x419c4b(0xa7)](_0x513e0d),_0x513e0d[_0x419c4b(0x88)](),_0x513e0d['select']();try{const _0x348577=document['execCommand']('copy');_0x348577&&(_0x110d6d['classList'][_0x419c4b(0xac)](_0x419c4b(0x106)),setTimeout(()=>_0x110d6d[_0x419c4b(0xe5)][_0x419c4b(0xcc)](_0x419c4b(0x106)),0x7d0));}catch(_0x6887b2){console[_0x419c4b(0xd7)](_0x419c4b(0x10c),_0x6887b2);}document[_0x419c4b(0xf4)][_0x419c4b(0x10a)](_0x513e0d);}};}));
+document.addEventListener('DOMContentLoaded', () => {
+    const games = {
+        1: {
+            name: 'Riding Extreme 3D',
+            appToken: 'd28721be-fd2d-4b45-869e-9f253b554e50',
+            promoId: '43e35910-c168-4634-ad4f-52fd764a843f',
+            timing: 30000, // 30 seconds
+            attempts: 25,
+        },
+        2: {
+            name: 'Chain Cube 2048',
+            appToken: 'd1690a07-3780-4068-810f-9b5bbf2931b2',
+            promoId: 'b4170868-cef0-424f-8eb9-be0622e8e8e3',
+            timing: 30000, // 30 seconds
+            attempts: 20,
+        },
+        3: {
+            name: 'My Clone Army',
+            appToken: '74ee0b5b-775e-4bee-974f-63e7f4d5bacb',
+            promoId: 'fe693b26-b342-4159-8808-15e3ff7f8767',
+            timing: 180000, // 180 seconds
+            attempts: 30,
+        },
+        4: {
+            name: 'Train Miner',
+            appToken: '82647f43-3f87-402d-88dd-09a90025313f',
+            promoId: 'c4480ac7-e178-4973-8061-9ed5b2e17954',
+            timing: 30000, // 30 seconds
+            attempts: 15,
+        },
+        5: {
+            name: 'Merge Away',
+            appToken: '8d1cc2ad-e097-4b86-90ef-7a27e19fb833',
+            promoId: 'dc128d28-c45b-411c-98ff-ac7726fbaea4',
+            timing: 30000, // 30 seconds
+            attempts: 25,
+        },
+        6: {
+            name: 'Twerk Race 3D',
+            appToken: '61308365-9d16-4040-8bb0-2f4a4c69074c',
+            promoId: '61308365-9d16-4040-8bb0-2f4a4c69074c',
+            timing: 30000, // 30 seconds
+            attempts: 20,
+        },
+        7: {
+            name: 'Polysphere',
+            appToken: '2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71',
+            promoId: '2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71',
+            timing: 20000, // 20 seconds
+            attempts: 20,
+        },
+        8: {
+            name: 'Mow and Trim',
+            appToken: 'ef319a80-949a-492e-8ee0-424fb5fc20a6',
+            promoId: 'ef319a80-949a-492e-8ee0-424fb5fc20a6',
+            timing: 20000, // 20 seconds
+            attempts: 20,
+        },
+        9: {
+            name: 'Mud Racing',
+            appToken: '8814a785-97fb-4177-9193-ca4180ff9da8',
+            promoId: '8814a785-97fb-4177-9193-ca4180ff9da8',
+            timing: 20000, // 20 seconds
+            attempts: 20,
+        },
+        10: {
+            name: 'Cafe Dash',
+            appToken: 'bc0971b8-04df-4e72-8a3e-ec4dc663cd11',
+            promoId: 'bc0971b8-04df-4e72-8a3e-ec4dc663cd11',
+            timing: 20000, // 20 seconds
+            attempts: 20,
+        },
+        11: {
+            name: 'Zoopolis',
+            appToken: 'b2436c89-e0aa-4aed-8046-9b0515e1c46b',
+            promoId: 'b2436c89-e0aa-4aed-8046-9b0515e1c46b',
+            timing: 20000, // 20 seconds
+            attempts: 20,
+        },
+        12: {
+            name: 'Gangs Wars',
+            appToken: 'b6de60a0-e030-48bb-a551-548372493523',
+            promoId: 'c7821fa7-6632-482c-9635-2bd5798585f9',
+            timing: 40000, // 40 seconds
+            attempts: 30,
+        }
+    };
+
+    const gameOptions = document.querySelectorAll('.game-option');
+    const keyCountGroup = document.getElementById('keyCountGroup');
+    const keyRange = document.getElementById('keyRange');
+    const keyValue = document.getElementById('keyValue');
+    const startBtn = document.getElementById('startBtn');
+    const keyCountLabel = document.getElementById('keyCountLabel');
+    const progressContainer = document.getElementById('progressContainer');
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
+    const progressLog = document.getElementById('progressLog');
+    const keyContainer = document.getElementById('keyContainer');
+    const keysList = document.getElementById('keysList');
+    const copyAllBtn = document.getElementById('copyAllBtn');
+    const generatedKeysTitle = document.getElementById('generatedKeysTitle');
+    const copyStatus = document.getElementById('copyStatus');
+    const generateMoreBtn = document.getElementById('generateMoreBtn');
+    const sourceCode = document.getElementById('sourceCode');
+
+    let selectedGame = null;
+
+    sourceCode.addEventListener('click', () => {
+        window.open('https://github.com/ShafiqSadat/HamsterKeyGenWeb', '_blank');
+    });
+    
+gameOptions.forEach(option => {
+    option.addEventListener('click', () => {
+        gameOptions.forEach(opt => opt.classList.remove('selected'));
+        option.classList.add('selected');
+        selectedGame = option.dataset.game;
+
+        keyCountGroup.classList.remove('hidden');
+        startBtn.classList.remove('hidden');
+        
+        // Smooth scroll to the key count group
+        keyCountGroup.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+});
+
+    keyRange.addEventListener('input', () => {
+        keyValue.innerText = keyRange.value;
+    });
+
+    startBtn.addEventListener('click', async () => {
+        const keyCount = parseInt(keyRange.value);
+        if (!selectedGame) {
+            alert('Please select a game first.');
+            return;
+        }
+
+        const gameChoice = parseInt(selectedGame);
+        const game = games[gameChoice];
+
+        // Hide the form sections
+        document.querySelector('.grid-container').style.display = 'none';
+        keyCountGroup.style.display = 'none';
+
+        keyCountLabel.innerText = `Number of keys: ${keyCount}`;
+
+        progressBar.style.width = '0%';
+        progressText.innerText = '0%';
+        progressLog.innerText = 'Starting...';
+        progressContainer.classList.remove('hidden');
+        keyContainer.classList.add('hidden');
+        generatedKeysTitle.classList.add('hidden');
+        keysList.innerHTML = '';
+        copyAllBtn.classList.add('hidden');
+        startBtn.classList.add('hidden');
+        startBtn.disabled = true;
+
+        let progress = 0;
+        const updateProgress = (increment, message) => {
+            progress += increment;
+            progressBar.style.width = `${progress}%`;
+            progressText.innerText = `${progress}%`;
+            progressLog.innerText = message;
+        };
+
+        const generateKeyProcess = async () => {
+            const clientId = generateClientId();
+            let clientToken;
+            try {
+                clientToken = await login(clientId, game.appToken);
+            } catch (error) {
+                alert(`Failed to login: ${error.message}`);
+                startBtn.disabled = false;
+                return null;
+            }
+
+            for (let i = 0; i < game.attempts; i++) {
+                const hasCode = await emulateProgress(clientToken, game.promoId);
+                updateProgress((100 / game.attempts) / keyCount, `Emulating progress ${i + 1}/${game.attempts}...`);
+                if (hasCode) {
+                    break;
+                }
+                await sleep(game.timing);  // Sleep after each attempt to wait before the next event registration
+            }
+
+            try {
+                const key = await generateKey(clientToken, game.promoId);
+                updateProgress(100 / keyCount, 'Generating key...');
+                return key;
+            } catch (error) {
+                alert(`Failed to generate key: ${error.message}`);
+                return null;
+            }
+        };
+
+        const keys = await Promise.all(Array.from({ length: keyCount }, generateKeyProcess));
+
+        if (keys.length > 1) {
+            keysList.innerHTML = keys.filter(key => key).map(key =>
+                `<div class="key-item">
+                    <input type="text" value="${key}" readonly>
+                    <button class="copyKeyBtn" data-key="${key}">Copy Key</button>
+                </div>`
+            ).join('');
+            copyAllBtn.classList.remove('hidden');
+        } else if (keys.length === 1) {
+            keysList.innerHTML =
+                `<div class="key-item">
+                    <input type="text" value="${keys[0]}" readonly>
+                    <button class="copyKeyBtn" data-key="${keys[0]}">Copy Key</button>
+                </div>`;
+        }
+
+        keyContainer.classList.remove('hidden');
+        generatedKeysTitle.classList.remove('hidden');
+
+        document.querySelectorAll('.copyKeyBtn').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const key = event.target.getAttribute('data-key');
+                copyToClipboard(key);
+            });
+        });
+
+        copyAllBtn.addEventListener('click', () => {
+            const keysText = keys.filter(key => key).join('\n');
+            copyToClipboard(keysText);
+        });
+
+        progressBar.style.width = '100%';
+        progressText.innerText = '100%';
+        progressLog.innerText = 'Complete';
+
+        startBtn.classList.remove('hidden');
+        keyCountGroup.classList.remove('hidden');
+        document.querySelector('.grid-container').style.display = 'grid';
+        startBtn.disabled = false;
+    });
+
+    const generateClientId = () => {
+        const timestamp = Date.now();
+        const randomNumbers = Array.from({ length: 19 }, () => Math.floor(Math.random() * 10)).join('');
+        return `${timestamp}-${randomNumbers}`;
+    };
+
+    const login = async (clientId, appToken) => {
+        const response = await fetch('https://api.gamepromo.io/promo/login-client', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                appToken,
+                clientId,
+                clientOrigin: 'deviceid'
+            })
+        });
+
+        if (!response.ok) {
+            throw new Error('Failed to login');
+        }
+
+        const data = await response.json();
+        return data.clientToken;
+    };
+
+    const emulateProgress = async (clientToken, promoId) => {
+        const response = await fetch('https://api.gamepromo.io/promo/register-event', {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${clientToken}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                promoId,
+                eventId: generateUUID(),
+                eventOrigin: 'undefined'
+            })
+        });
+
+        if (!response.ok) {
+            return false;
+        }
+
+        const data = await response.json();
+        return data.hasCode;
+    };
+
+    const generateKey = async (clientToken, promoId) => {
+        const response = await fetch('https://api.gamepromo.io/promo/create-code', {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${clientToken}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                promoId
+            })
+        });
+
+        if (!response.ok) {
+            throw new Error('Failed to generate key');
+        }
+
+        const data = await response.json();
+        return data.promoCode;
+    };
+
+    const generateUUID = () => {
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+            const r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+        });
+    };
+
+    const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+    const copyToClipboard = (text) => {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(() => {
+                copyStatus.classList.remove('hidden');
+                setTimeout(() => copyStatus.classList.add('hidden'), 2000);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        } else {
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.top = '0';
+            textArea.style.left = '0';
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    copyStatus.classList.remove('hidden');
+                    setTimeout(() => copyStatus.classList.add('hidden'), 2000);
+                }
+            } catch (err) {
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+
+            document.body.removeChild(textArea);
+        }
+    };
+});
